@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>contact us </h1>
+    </header>
+    <section>
+        <form action="taran.js" method="post">
+            <div>
+            Name:    <input type="text" required name="username" id="name" placeholder="Enter your name">
+            </div> <br>
+            <div>
+             Email:   <input type="email" required name="usermail" id="mail" placeholder="Enter your mail">
+            </div> <br>
+            <div>
+            password:    <input type="password" name="passcode" id="password" placeholder="Enter your password">
+            </div><br>
+            <div>
+            number:    <input type="number" name="number" id="number" placeholder="Enter your phone number">
+            </div><br>
+            <div>
+                Gender : <select name="gender" id="">
+                    <option value="">choose</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                </select>
+                <div><br>
+            </div>
+           
+            <div>
+                frontend:<input type="checkbox" name="skills" id="frontend">
+                Backend:<input type="checkbox" name="skills" id="backend">
+            </div><br>
+
+            <fieldset>
+                <legend>Mode of Payment</legend>
+            online: <input type="radio" name="payment" id="online" >
+            cash:   <input type="radio" name="payment" id="cash">
+            </fieldset>
+            feedback:<textarea name="usermessage" id="textarea" cols="50" rows="10" placeholder="Enter text here"></textarea>
+<br>
+<input type="file" name="file" id="file">
+           <div>
+            <input type="submit" value="submit">
+           </div> 
+        </form>
+    </section>
+    <!-- payload ke through hamara information jata he  payload k ethrough ham error vagera bhi check karsakte h
+    server me 3 chije hoti he payload  2) response 3)
+validation 
+-->
+</body>
+
+</html>
